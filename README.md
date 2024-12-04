@@ -8,37 +8,27 @@ by ZhengyangLiu
 
 ## Introduction
 
-In this project,  we do research on recipe and rating datasets. We have tried visual displays, hypothesis testing, and various models for prediction and learned a lot.  
+In this project,  we do research on recipe and rating datasets. 
+We have tried visual displays, hypothesis testing, and various models for prediction and learned a lot.  
 
 ---
 
 ## Data Cleaning and Exploratory Data Analysis
 
-<iframe src="assets/10-80-enrollment.html" width=800 height=600 frameBorder=0></iframe>
-
+This part we get the dataset and remove some extreme data.
 ---
 
 ## Assessment of Missingness
 
-Here's what a Markdown table looks like. Note that the code for this table was generated _automatically_ from a DataFrame, using
-
-```py
-print(counts[['Quarter', 'Count']].head().to_markdown(index=False))
-```
-
-| Quarter     |   Count |
-|:------------|--------:|
-| Fall 2020   |       3 |
-| Winter 2021 |       2 |
-| Spring 2021 |       6 |
-| Summer 2021 |       4 |
-| Fall 2021   |      55 |
+This part we delete NMAR values.
 
 ---
 
 ## Hypothesis Testing
 
+Here is the result figure:
 
+<iframe src="assets/hypothesis_testing.html" width=800 height=600 frameBorder=0></iframe>
 ---
 
 ## Framing a Prediction Problem
@@ -48,17 +38,25 @@ print(counts[['Quarter', 'Count']].head().to_markdown(index=False))
 
 ## Baseline Model
 
+Here is the result Mean Squared Error (MSE): 5127.871683313645 and result figure:
+
+<iframe src="assets/baseline_model.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
 
 
 ## Final Model
 
+Here is the result Mean Squared Error (MSE): 5127.871683313645 and result figure:
+
+<iframe src="assets/final_model.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
 
 
 ## Fairness Analysis
 
-
+Here is the result:  
+Observed mean difference：-12.12
+Permutation test p-value：0.0000
 ---
